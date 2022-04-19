@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/signal"
 	"time"
+
 	"gopher/handlers"
-	"gopher/data"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 
 	// create a new server
 	s := http.Server{
-		Addr:         ":9090",      // configure the bind address
+		Addr:         ":9090",           // configure the bind address
 		Handler:      sm,                // set the default handler
 		ErrorLog:     l,                 // set the logger for the server
 		ReadTimeout:  5 * time.Second,   // max time to read request from the client
