@@ -31,6 +31,11 @@ func GetProducts() Products {
 	return productList
 }
 
+// add product
+func AddProduct(p *Product) {
+	productList = append(productList, p)
+}
+
 // example data source
 var productList = []*Product{
 	&Product{

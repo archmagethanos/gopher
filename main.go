@@ -2,13 +2,12 @@ package main
 
 import (
 	"context"
+	"gopher/handlers"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"time"
-
-	"gopher/handlers"
 )
 
 func main() {
